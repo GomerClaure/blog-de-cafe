@@ -226,7 +226,7 @@ p {
   }
 }
 
-/* ==== Pagina de entrada del blog ====*/
+/* ==== Página de entrada del blog ====*/
 .blog-entrada-title, .blog-cursos-title {
   text-align: center;
 }
@@ -269,7 +269,7 @@ p {
   margin-bottom: 2rem;
 }
 
-/* ==== Pagina informacion de cursos====*/
+/* ==== Página informacion de cursos====*/
 .blog-cursos .curso{
   display: grid;
   grid-template-columns: 1fr 2fr;
