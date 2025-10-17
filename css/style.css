@@ -142,6 +142,9 @@ p {
     flex-direction: column;
     gap: 1rem;
   }
+  .header-container .hero, .header-container{
+    padding: 1rem;
+  }
 }
 
 /* SECCION MAIN BLOG */
@@ -164,11 +167,18 @@ p {
   padding: .5rem 1rem;
   margin-top: 1rem;
   text-align: center;
+  border: 1px solid transparent; /* el espacio ya está reservado */
+  transition: all 0.3s ease;
 }
 
-
-
-.post, .curso {
+.read-more:hover,
+.read-more:focus {
+  color: var(--negro);
+  background-color: var(--blanco);
+  border-color: var(--primario); /* solo cambia el color del borde */
+}
+.post,
+.curso {
   margin-bottom: 4rem;
 }
 
@@ -184,7 +194,15 @@ p {
   margin-top: 1rem;
   text-align: center;
   font-size: 1.7rem;
+  border: 1px solid transparent; /* el espacio ya está reservado */
+  transition: all 0.3s ease;
 }
+.curso-link:hover,
+.curso-link:focus {
+  color: var(--primario);
+  background-color: var(--blanco);
+  border-color: var(--primario);
+} 
 
 .sidebar {
   padding-left: 3rem;
@@ -199,14 +217,57 @@ p {
   }
 
   .sidebar {
-padding-left: 0px;
+    padding-left: 0px;
   }
 
-  .read-more, .curso-link {
+  .read-more,
+  .curso-link {
     width: 100%;
   }
 }
 
+/* ==== Pagina de entrada del blog ====*/
+.blog-entrada-title {
+  text-align: center;
+}
+
+.entrada img {
+  height: 100%;
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+
+.entrada-meta {
+  color: gray;
+  margin-bottom: 2rem;
+}
+
+.main-entrada-content {
+  padding-inline: 10rem;
+  margin-bottom: 5rem;
+}
+
+.entrada{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+@media (max-width: 1024px) {
+  .entrada-meta {
+    text-align: center;
+  }
+  .entrada {
+    grid-template-columns: 1fr;
+    gap: 0rem;
+  }
+  .main-entrada-content {
+    padding-inline: 2rem;
+  }
+}
+.entrada img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
 /* Navegacion */
 
 footer {
@@ -227,19 +288,21 @@ footer {
     gap: 2rem
   }
 }
+
 @media (max-width: 868px) {
-  .footer{
+  .footer {
     padding: 2rem 3rem;
   }
 }
 
 @media (max-width: 768px) {
-  .footer{
+  .footer {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-  } 
-  .footer-links{
+  }
+
+  .footer-links {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
