@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de café</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="header-container">
+        <nav class="navbar">
+            <a href="#" class="logo">Blog <span>de Café</span></a>
+            <ul class="nav-links">
+                <li><a href="./">Inicio</a></li>
+                <li><a href="./nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Blog de café con consejos y cursos</h1>
+            <p>Aprende de los expertos con las mejores recetas y consejos</p>
+        </div>
+    </header>
+
+    <main class="contenedor">
+        <section class="Contacto">
+            <h2>Contacto</h2>
+        </section>
+        <form class="contacto-form">
+            <div class="card-styled">
+                <!-- <img alt="Imagen contacto de fondo" src="./img/nosotros.jpg" class="card-img"> -->
+                 <div class="card-img">
+
+                 </div>
+                <div class="card-content">
+                    <div class="card-field">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+
+                    <div class="card-field">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="card-field">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    </div>
+
+                <button type="submit" class="btn-submit btn-card">Enviar</button>
+                </div>
+                
+            </div>
+        </form>
+    </main>
+    <footer class="footer">
+        <a href="#" class="footer-logo">Blog <span>de Café</span></a>
+        <div class="footer-links">
+            <a href="./">Inicio</a>
+            <a href="./nosotros.html">Sobre Nosotros</a>
+            <a href="./contacto.html">Contacto</a>
+        </div>
+    </footer>
+</body>
+
+</html>
